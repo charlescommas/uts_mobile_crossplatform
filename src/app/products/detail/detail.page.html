@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/products"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Product Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="loadedProduct.image"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row style="background-color: #ddd; padding: 15px; margin-bottom: 1em;">
+      <div>
+        <ion-row style="margin-bottom: 0.8em;">
+          {{loadedProduct.name}}
+        </ion-row>
+        <ion-row style="margin-bottom: 0.8em;">
+          Rp. {{loadedProduct.price}},-
+        </ion-row>
+        <ion-row style="margin-bottom: 0.8em;">
+          Tersedia: {{loadedProduct.stock}}
+        </ion-row>
+      </div>
+    </ion-row>
+    <ion-row style="background-color: #ddd; padding: 15px; margin-bottom: 1em;">
+      <div>
+        <ion-row style="margin-bottom: 0.8em;">
+          {{loadedProduct.name}}
+        </ion-row>
+        <ion-row style="margin-bottom: 0.8em;">
+          Rp. {{loadedProduct.price}},-
+        </ion-row>
+        <ion-row style="margin-bottom: 0.8em;">
+          Tersedia: {{loadedProduct.stock}}
+        </ion-row>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

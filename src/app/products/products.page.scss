@@ -1,0 +1,17 @@
+.center-ver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.slim-item{
+    --min-height: 35px !important;
+}
+.slim-label{
+    padding: 0;
+    margin: 0;
+}
+.product{
+    margin: 10px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+}
